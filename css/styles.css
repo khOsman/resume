@@ -1,0 +1,78 @@
+/* Common styles */
+body{
+    font-family: 'Lato', sans-serif;
+    color:#57606f ;
+    margin: 0;
+    padding: 0;
+}
+h6{text-transform: uppercase;}
+a:link,a:visited{color: #ff6b6b;text-decoration: none;}
+img{width: 200px;height: 250px;}
+.primary{color: #2d3436;text-transform: capitalize;font-size: 50px;}
+.secondary{color:#ff6b6b;}
+.bg-danger{background-color:#ff6b6b !important;}
+.default{color: #57606f;font-weight: 600;}
+.highlighter{color: #7bed9f;}
+.divider{border-bottom: 8px solid #2d3436 ;}
+.tb-margin{margin: 20px 0;}
+.btn{text-decoration: none; border: 1px solid #2d3436 ;}
+.btn-hireme{transition: .5s ease-in;}
+.btn-hireme:hover{background-color: #ff6b6b;color: aliceblue;border: 1px solid aliceblue ;}
+.btn-resume{transition: .5s ease-in;}
+.btn-resume:hover{background-color: #ff6b6b;color: aliceblue;border: 1px solid aliceblue ;}
+/* Header section */
+
+.header-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;   
+}
+
+.basic-img-sm{
+    display: none;
+}
+
+.basic-img{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Bio Section */
+
+.bio-section{
+    
+}
+
+.profile-content{
+    letter-spacing:2.5px;
+}
+
+/* Contact Section */
+.conatact-section{margin-bottom: 20px;}
+.conatact-section p{
+    margin-bottom: 0 !important;
+}
+
+.ad-Info-right {
+    text-align: right;
+}
+
+/* For small screen devices */
+@media screen and (max-width:450px){
+    .header-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .basic-img{display: none;}
+    .basic-img-sm{display: block; text-align: center; }
+    .basic-info{
+        text-align: center;
+    }
+  
+    .ad-Info-right {
+        text-align: left;
+    }
+}
